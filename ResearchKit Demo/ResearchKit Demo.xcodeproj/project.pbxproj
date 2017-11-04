@@ -14,6 +14,8 @@
 		808E8B891FAD5A0E000EF6F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808E8B871FAD5A0E000EF6F2 /* LaunchScreen.storyboard */; };
 		808E8B941FAD5A0F000EF6F2 /* ResearchKit_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808E8B931FAD5A0F000EF6F2 /* ResearchKit_DemoTests.swift */; };
 		808E8B9F1FAD5A0F000EF6F2 /* ResearchKit_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808E8B9E1FAD5A0F000EF6F2 /* ResearchKit_DemoUITests.swift */; };
+		80D9BD211FAE050000BBB27E /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D9BD201FAE050000BBB27E /* PageViewController.swift */; };
+		80D9BD231FAE18ED00BBB27E /* RKIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D9BD221FAE18ED00BBB27E /* RKIntroViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		808E8B9A1FAD5A0F000EF6F2 /* ResearchKit DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ResearchKit DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		808E8B9E1FAD5A0F000EF6F2 /* ResearchKit_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchKit_DemoUITests.swift; sourceTree = "<group>"; };
 		808E8BA01FAD5A0F000EF6F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80D9BD201FAE050000BBB27E /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		80D9BD221FAE18ED00BBB27E /* RKIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKIntroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				808E8B7E1FAD5A0E000EF6F2 /* AppDelegate.swift */,
 				808E8B801FAD5A0E000EF6F2 /* ViewController.swift */,
 				808E8B821FAD5A0E000EF6F2 /* Main.storyboard */,
+				80D9BD221FAE18ED00BBB27E /* RKIntroViewController.swift */,
+				80D9BD201FAE050000BBB27E /* PageViewController.swift */,
 				808E8B851FAD5A0E000EF6F2 /* Assets.xcassets */,
 				808E8B871FAD5A0E000EF6F2 /* LaunchScreen.storyboard */,
 				808E8B8A1FAD5A0E000EF6F2 /* Info.plist */,
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80D9BD211FAE050000BBB27E /* PageViewController.swift in Sources */,
 				808E8B811FAD5A0E000EF6F2 /* ViewController.swift in Sources */,
+				80D9BD231FAE18ED00BBB27E /* RKIntroViewController.swift in Sources */,
 				808E8B7F1FAD5A0E000EF6F2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

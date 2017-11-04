@@ -21,6 +21,9 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3K4-Qc-1IK">
                                 <rect key="frame" x="147" y="318" width="80" height="30"/>
                                 <state key="normal" title="Get Started"/>
+                                <connections>
+                                    <segue destination="s4T-fv-WTw" kind="showDetail" action="showViewController:sender:" id="214-pk-FFD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -34,6 +37,268 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="30" y="10"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5eN-YU-TT6">
+            <objects>
+                <viewController storyboardIdentifier="RKIntroPageContentController1" id="l1M-Kn-VpE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o9s-0p-k0Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zGX-dA-gpv">
+                                <rect key="frame" x="0.0" y="20" width="375" height="980"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VX8-xe-8WS">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcE-mc-HAl">
+                                                <rect key="frame" x="8" y="98" width="359" height="568.5"/>
+                                                <mutableString key="text">To participate, you need to register on the app and use the smart health device as directed.
+
+The smart health device tracks:
+*How often you use the device;
+*How long you use the device;
+*Location you use the device; and
+*Which app features and interactions improve your health.
+
+PROCEDURES
+
+1. Set-up the Smart Device and Mobile App
+If you provide consent, you will be asked to allow the Mobile App to read some of your personal and health information, such as date of birth and sex.  We may use that information for research purposes only.  We will not use this information for commercial or advertising purposes.
+
+2. Get to it!
+Use the Smart Device and the Mobile App to improve your health and review feedback on your health performance.  You can use the device with or without the mobile application open.  Just sync your phone and health device at least once per week.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How this Study Works" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1E-DG-n3r">
+                                                <rect key="frame" x="99.5" y="50" width="175.5" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="pcE-mc-HAl" firstAttribute="top" secondItem="i1E-DG-n3r" secondAttribute="bottom" constant="27" id="1VF-Up-0Qd"/>
+                                            <constraint firstAttribute="height" constant="700" id="CDt-rM-hwA"/>
+                                            <constraint firstItem="pcE-mc-HAl" firstAttribute="leading" secondItem="VX8-xe-8WS" secondAttribute="leading" constant="8" id="FN3-jK-3rR"/>
+                                            <constraint firstItem="i1E-DG-n3r" firstAttribute="top" secondItem="VX8-xe-8WS" secondAttribute="top" constant="50" id="ROE-uk-TG7"/>
+                                            <constraint firstAttribute="trailing" secondItem="pcE-mc-HAl" secondAttribute="trailing" constant="8" id="SjZ-lj-HxQ"/>
+                                            <constraint firstItem="i1E-DG-n3r" firstAttribute="centerX" secondItem="VX8-xe-8WS" secondAttribute="centerX" id="abW-8u-k92"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="VX8-xe-8WS" firstAttribute="top" secondItem="zGX-dA-gpv" secondAttribute="top" id="2lr-4s-deX"/>
+                                    <constraint firstAttribute="trailing" secondItem="VX8-xe-8WS" secondAttribute="trailing" id="aL1-64-4rU"/>
+                                    <constraint firstAttribute="bottom" secondItem="VX8-xe-8WS" secondAttribute="bottom" id="tq3-bT-sbi"/>
+                                    <constraint firstItem="VX8-xe-8WS" firstAttribute="leading" secondItem="zGX-dA-gpv" secondAttribute="leading" id="vIl-pX-mO8"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="zGX-dA-gpv" firstAttribute="bottom" secondItem="bIU-tS-wbY" secondAttribute="bottom" id="0cZ-Oz-bxK"/>
+                            <constraint firstItem="VX8-xe-8WS" firstAttribute="width" secondItem="o9s-0p-k0Z" secondAttribute="width" id="7DC-9D-trL"/>
+                            <constraint firstItem="zGX-dA-gpv" firstAttribute="top" secondItem="bIU-tS-wbY" secondAttribute="top" id="Tpc-qr-Gtv"/>
+                            <constraint firstItem="zGX-dA-gpv" firstAttribute="leading" secondItem="bIU-tS-wbY" secondAttribute="leading" id="XHH-6f-J3v"/>
+                            <constraint firstItem="zGX-dA-gpv" firstAttribute="trailing" secondItem="bIU-tS-wbY" secondAttribute="trailing" id="bxy-Ek-a5U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bIU-tS-wbY"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="1000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aYk-0X-sJh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1492" y="795.20239880059978"/>
+        </scene>
+        <!--Intro View Controller-->
+        <scene sceneID="vLy-L1-TCT">
+            <objects>
+                <viewController id="s4T-fv-WTw" customClass="RKIntroViewController" customModule="ResearchKit_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ijq-Rl-gzo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9L8-i5-PrX">
+                                <rect key="frame" x="141" y="607" width="94" height="30"/>
+                                <state key="normal" title="Join Study"/>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WOI-oA-ADX">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem title="Health Study" id="y5U-BV-7GW"/>
+                                </items>
+                            </navigationBar>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mhf-lJ-oYQ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="508"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="icn-n1-Rxw" kind="embed" id="Dfi-rc-gcc"/>
+                                </connections>
+                            </containerView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="C0S-10-25q">
+                                <rect key="frame" x="168" y="561" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EH9-pf-ytY" firstAttribute="bottom" secondItem="9L8-i5-PrX" secondAttribute="bottom" constant="30" id="31i-fL-agT"/>
+                            <constraint firstItem="9L8-i5-PrX" firstAttribute="top" secondItem="C0S-10-25q" secondAttribute="bottom" constant="9" id="DmX-Qp-Tcd"/>
+                            <constraint firstItem="C0S-10-25q" firstAttribute="centerX" secondItem="EH9-pf-ytY" secondAttribute="centerX" id="qa2-Sw-v6E"/>
+                            <constraint firstItem="9L8-i5-PrX" firstAttribute="centerX" secondItem="EH9-pf-ytY" secondAttribute="centerX" id="wNc-2q-qOM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EH9-pf-ytY"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="mhf-lJ-oYQ" id="PsW-qC-4HC"/>
+                        <outlet property="pageControl" destination="C0S-10-25q" id="uHc-G0-B2F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="51x-UA-IkU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="728.79999999999995" y="8.5457271364317844"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="1um-x6-k0I">
+            <objects>
+                <pageViewController storyboardIdentifier="RKIntroPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="icn-n1-Rxw" customClass="PageViewController" customModule="ResearchKit_Demo" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tOf-9D-e5k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2018" y="8"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ped-2h-paS">
+            <objects>
+                <viewController storyboardIdentifier="RKIntroPageContentController2" id="Shh-Mz-If8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dmw-Nk-7J4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wrn-Ha-PoC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="980"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LGl-0Z-tYJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help the Study" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJ6-qJ-opL">
+                                                <rect key="frame" x="127.5" y="53" width="119" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4V-ZJ-xhd">
+                                                <rect key="frame" x="8" y="94" width="359" height="365.5"/>
+                                                <mutableString key="text">Imagine a future with better health. Issues related to your health are the most prevalent contributors to chronic disease, impacting lives everywhere.
+
+Better health helps prevent disease and suffering.  However, for as crucial as your health is, there is limited long-term data tracking the quality, frequency and duration of your health routines.
+
+We are working with a company, (the leading health company and makers of health related products) and the School of Health  at The University of MadeUp in the United Kingdom to better understand real, at-home health habits and the efficacy of such health monitoring.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="m4V-ZJ-xhd" firstAttribute="top" secondItem="AJ6-qJ-opL" secondAttribute="bottom" constant="20" id="7HE-GQ-BgU"/>
+                                            <constraint firstItem="AJ6-qJ-opL" firstAttribute="centerX" secondItem="LGl-0Z-tYJ" secondAttribute="centerX" id="GDB-Ip-V0z"/>
+                                            <constraint firstAttribute="height" constant="500" id="HfF-mv-JGI"/>
+                                            <constraint firstItem="m4V-ZJ-xhd" firstAttribute="leading" secondItem="LGl-0Z-tYJ" secondAttribute="leading" constant="8" id="Yct-ce-2vg"/>
+                                            <constraint firstAttribute="trailing" secondItem="m4V-ZJ-xhd" secondAttribute="trailing" constant="8" id="hNP-Aa-TSd"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="LGl-0Z-tYJ" secondAttribute="trailing" id="1XM-2r-Cdw"/>
+                                    <constraint firstItem="LGl-0Z-tYJ" firstAttribute="top" secondItem="Wrn-Ha-PoC" secondAttribute="top" id="4Qr-Uw-pJZ"/>
+                                    <constraint firstItem="LGl-0Z-tYJ" firstAttribute="leading" secondItem="Wrn-Ha-PoC" secondAttribute="leading" id="Hpw-WA-mdW"/>
+                                    <constraint firstAttribute="bottom" secondItem="LGl-0Z-tYJ" secondAttribute="bottom" id="hKH-K1-qHa"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Wrn-Ha-PoC" firstAttribute="top" secondItem="A0x-kR-B3F" secondAttribute="top" id="Dr6-Os-Yob"/>
+                            <constraint firstItem="LGl-0Z-tYJ" firstAttribute="width" secondItem="dmw-Nk-7J4" secondAttribute="width" id="ECU-tu-SXM"/>
+                            <constraint firstItem="AJ6-qJ-opL" firstAttribute="top" secondItem="A0x-kR-B3F" secondAttribute="top" constant="53" id="JXG-bi-elD"/>
+                            <constraint firstItem="Wrn-Ha-PoC" firstAttribute="trailing" secondItem="A0x-kR-B3F" secondAttribute="trailing" id="QZK-Ce-WpG"/>
+                            <constraint firstItem="Wrn-Ha-PoC" firstAttribute="leading" secondItem="A0x-kR-B3F" secondAttribute="leading" id="VD7-jt-z2F"/>
+                            <constraint firstItem="Wrn-Ha-PoC" firstAttribute="bottom" secondItem="A0x-kR-B3F" secondAttribute="bottom" id="njH-Iu-zmK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="A0x-kR-B3F"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="1000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NqJ-IR-dca" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2224.8000000000002" y="794.30284857571223"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2nf-wD-RcE">
+            <objects>
+                <viewController storyboardIdentifier="RKIntroPageContentController3" id="0Db-Cx-kGf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vg7-fh-A4S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqA-bD-tCe">
+                                <rect key="frame" x="0.0" y="20" width="375" height="980"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VP0-hX-59t">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ms-S2-GqR">
+                                                <rect key="frame" x="8" y="97" width="359" height="122"/>
+                                                <string key="text">This health study is sponsored by the Great Health Company Limited.  The Principal Investigator for the study is Dr. Fake Name.  Please see the information below for more details.
+</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Who is Running This Study?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsn-No-kdG">
+                                                <rect key="frame" x="69" y="56" width="236" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="1ms-S2-GqR" secondAttribute="trailing" constant="8" id="2or-N7-sC6"/>
+                                            <constraint firstAttribute="height" constant="1000" id="7hb-Gi-MAM"/>
+                                            <constraint firstItem="1ms-S2-GqR" firstAttribute="leading" secondItem="VP0-hX-59t" secondAttribute="leading" constant="8" id="HmY-Ox-Tst"/>
+                                            <constraint firstItem="1ms-S2-GqR" firstAttribute="top" secondItem="Rsn-No-kdG" secondAttribute="bottom" constant="20" id="MYR-b3-pn8"/>
+                                            <constraint firstAttribute="trailing" secondItem="1ms-S2-GqR" secondAttribute="trailing" constant="8" id="ueV-rB-CRx"/>
+                                            <constraint firstItem="Rsn-No-kdG" firstAttribute="width" secondItem="VP0-hX-59t" secondAttribute="width" id="vmt-Qk-brd"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="VP0-hX-59t" firstAttribute="top" secondItem="hqA-bD-tCe" secondAttribute="top" id="8oL-ye-HIA"/>
+                                    <constraint firstItem="VP0-hX-59t" firstAttribute="leading" secondItem="hqA-bD-tCe" secondAttribute="leading" id="HJp-PE-UJf"/>
+                                    <constraint firstAttribute="trailing" secondItem="VP0-hX-59t" secondAttribute="trailing" id="ciQ-m6-qly"/>
+                                    <constraint firstAttribute="bottom" secondItem="VP0-hX-59t" secondAttribute="bottom" id="v8O-du-sJ4"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="hqA-bD-tCe" firstAttribute="trailing" secondItem="BGo-67-qDv" secondAttribute="trailing" id="AAe-L7-78n"/>
+                            <constraint firstItem="hqA-bD-tCe" firstAttribute="bottom" secondItem="BGo-67-qDv" secondAttribute="bottom" id="INz-Cj-Kvw"/>
+                            <constraint firstItem="VP0-hX-59t" firstAttribute="width" secondItem="vg7-fh-A4S" secondAttribute="width" id="WBy-Xz-g2o"/>
+                            <constraint firstItem="hqA-bD-tCe" firstAttribute="top" secondItem="BGo-67-qDv" secondAttribute="top" id="rvq-qy-1kR"/>
+                            <constraint firstItem="hqA-bD-tCe" firstAttribute="leading" secondItem="BGo-67-qDv" secondAttribute="leading" id="u2h-XM-zNb"/>
+                            <constraint firstItem="Rsn-No-kdG" firstAttribute="top" secondItem="BGo-67-qDv" secondAttribute="top" constant="56" id="xlS-32-qXh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BGo-67-qDv"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="1000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Lt-kL-hCg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3032.8000000000002" y="794.30284857571223"/>
         </scene>
     </scenes>
 </document>
