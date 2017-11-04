@@ -13,6 +13,21 @@ class RKIntroViewController: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var containerView: UIView!
 
+    private var consent: ResearchStudiesConsent?
+    @IBAction func joinStudy(_ sender: UIButton) {
+        self.consent = ResearchStudiesConsent()
+        let presenter = self
+        self.consent?.presentConsentViewController(withPresentingViewController: presenter, completionHandler: { (taskViewController, reason, _) in
+            if reason == .completed {
+                taskViewController.dismiss(animated: true, completion: nil)
+            } else if reason == .failed {
+                taskViewController.dismiss(animated: true, completion: nil)
+            } else if reason == .discarded {
+                taskViewController.dismiss(animated: true, completion: nil)
+            }
+        })
+    }
+
     var introPageViewController: PageViewController? {
         didSet {
             introPageViewController?.pageViewDelegate = self

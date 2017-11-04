@@ -124,6 +124,9 @@ Use the Smart Device and the Mobile App to improve your health and review feedba
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9L8-i5-PrX">
                                 <rect key="frame" x="151.5" y="607" width="73" height="30"/>
                                 <state key="normal" title="Join Study"/>
+                                <connections>
+                                    <action selector="joinStudy:" destination="s4T-fv-WTw" eventType="touchUpInside" id="XT7-7d-PCw"/>
+                                </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WOI-oA-ADX">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
