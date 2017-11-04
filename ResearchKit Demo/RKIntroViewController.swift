@@ -1,9 +1,9 @@
 //
-//  TutorialViewController.swift
-//  UIPageViewController Post
+//  RKIntroViewController.swift
+//  ResearchKit Demo
 //
-//  Created by Jeffrey Burt on 2/3/16.
-//  Copyright © 2016 Seven Even. All rights reserved.
+//  Created by Jon Tancer on 11/4/17.
+//  Copyright © 2017 njtman. All rights reserved.
 //
 
 import UIKit
