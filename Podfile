@@ -6,6 +6,7 @@ target 'ResearchKit Demo' do
   use_frameworks!
 
   # Pods for ResearchKit Demo
+  pod 'ResearchKit'
 
   target 'ResearchKit DemoTests' do
     inherit! :search_paths
