@@ -46,10 +46,6 @@ class RKIntroViewController: UIViewController {
         }
     }
 
-    @IBAction func didTapNextButton(_ sender: UIButton) {
-        introPageViewController?.scrollToNextViewController()
-    }
-
     /**
      Fired when the user taps on the pageControl to change its current page.
      */
