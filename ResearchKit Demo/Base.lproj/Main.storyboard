@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3K4-Qc-1IK">
-                                <rect key="frame" x="147" y="318" width="80" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3K4-Qc-1IK">
+                                <rect key="frame" x="147" y="328.5" width="80" height="30"/>
                                 <state key="normal" title="Get Started"/>
                                 <connections>
                                     <segue destination="s4T-fv-WTw" kind="showDetail" action="showViewController:sender:" id="214-pk-FFD"/>
