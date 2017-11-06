@@ -11,6 +11,21 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="tXs-O4-3df">
+            <objects>
+                <viewController id="QWV-jB-ZXB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="irg-ai-7cg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="eWi-09-x18"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v5d-pC-axR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1068" y="1641"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="5eN-YU-TT6">
             <objects>
                 <viewController storyboardIdentifier="RKIntroPageContentController1" id="l1M-Kn-VpE" sceneMemberID="viewController">
@@ -98,6 +113,7 @@ Use the Smart Device and the Mobile App to improve your health and review feedba
                                 <state key="normal" title="Join Study"/>
                                 <connections>
                                     <action selector="joinStudy:" destination="s4T-fv-WTw" eventType="touchUpInside" id="XT7-7d-PCw"/>
+                                    <segue destination="QWV-jB-ZXB" kind="show" id="VbR-2V-W7m"/>
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhf-lJ-oYQ">
