@@ -26,7 +26,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="34" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcE-mc-HAl">
                                                 <rect key="frame" x="8" y="98" width="359" height="568.5"/>
-                                                <mutableString key="text">To participate, you need to register on the app and use the smart health device as directed.
+                                                <string key="text">To participate, you need to register on the app and use the smart health device as directed.
 
 The smart health device tracks:
 *How often you use the device;
@@ -40,7 +40,7 @@ PROCEDURES
 If you provide consent, you will be asked to allow the Mobile App to read some of your personal and health information, such as date of birth and sex.  We may use that information for research purposes only.  We will not use this information for commercial or advertising purposes.
 
 2. Get to it!
-Use the Smart Device and the Mobile App to improve your health and review feedback on your health performance.  You can use the device with or without the mobile application open.  Just sync your phone and health device at least once per week.</mutableString>
+Use the Smart Device and the Mobile App to improve your health and review feedback on your health performance.  You can use the device with or without the mobile application open.  Just sync your phone and health device at least once per week.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -172,11 +172,11 @@ Use the Smart Device and the Mobile App to improve your health and review feedba
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4V-ZJ-xhd">
                                                 <rect key="frame" x="8" y="94" width="359" height="365.5"/>
-                                                <mutableString key="text">Imagine a future with better health. Issues related to your health are the most prevalent contributors to chronic disease, impacting lives everywhere.
+                                                <string key="text">Imagine a future with better health. Issues related to your health are the most prevalent contributors to chronic disease, impacting lives everywhere.
 
 Better health helps prevent disease and suffering.  However, for as crucial as your health is, there is limited long-term data tracking the quality, frequency and duration of your health routines.
 
-We are working with a company, (the leading health company and makers of health related products) and the School of Health  at The University of MadeUp in the United Kingdom to better understand real, at-home health habits and the efficacy of such health monitoring.</mutableString>
+We are working with a company, (the leading health company and makers of health related products) and the School of Health  at The University of MadeUp in the United Kingdom to better understand real, at-home health habits and the efficacy of such health monitoring.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
