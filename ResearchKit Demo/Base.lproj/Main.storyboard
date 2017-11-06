@@ -167,6 +167,7 @@
                         <barButtonItem key="rightBarButtonItem" enabled="NO" title="Next" id="RXC-xi-3tT">
                             <connections>
                                 <action selector="tapNextButton:" destination="QWV-jB-ZXB" id="BjY-hR-gnM"/>
+                                <segue destination="5Zr-ye-bgo" kind="show" id="JMV-gR-YRf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -184,6 +185,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v5d-pC-axR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1068" y="1640.3298350824589"/>
+        </scene>
+        <!--Eligibility Consent View Controller-->
+        <scene sceneID="mbo-dR-s8J">
+            <objects>
+                <viewController id="5Zr-ye-bgo" customClass="EligibilityConsentViewController" customModule="ResearchKit_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IOb-bt-3vW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the button below to begin the consent process" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agc-Pe-PAk">
+                                <rect key="frame" x="30" y="295" width="315" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Are eligible to join the study." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFj-MQ-Nzb">
+                                <rect key="frame" x="57" y="260" width="260" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQx-rU-7Ne">
+                                <rect key="frame" x="139" y="568" width="96" height="30"/>
+                                <state key="normal" title="Start Consent"/>
+                                <connections>
+                                    <action selector="startConsentButton:" destination="5Zr-ye-bgo" eventType="touchUpInside" id="EhD-nm-V9n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VFj-MQ-Nzb" firstAttribute="centerX" secondItem="gbm-Ho-80Y" secondAttribute="centerX" id="HiX-bN-Kdz"/>
+                            <constraint firstItem="Agc-Pe-PAk" firstAttribute="top" secondItem="VFj-MQ-Nzb" secondAttribute="bottom" constant="14" id="HzP-6T-5Nr"/>
+                            <constraint firstItem="gbm-Ho-80Y" firstAttribute="bottom" secondItem="HQx-rU-7Ne" secondAttribute="bottom" constant="25" id="U2W-my-qkO"/>
+                            <constraint firstItem="VFj-MQ-Nzb" firstAttribute="top" secondItem="gbm-Ho-80Y" secondAttribute="top" constant="196" id="pmW-em-yhI"/>
+                            <constraint firstItem="HQx-rU-7Ne" firstAttribute="centerX" secondItem="gbm-Ho-80Y" secondAttribute="centerX" id="tKw-g9-P8Y"/>
+                            <constraint firstItem="Agc-Pe-PAk" firstAttribute="leading" secondItem="gbm-Ho-80Y" secondAttribute="leading" constant="30" id="xAc-QC-YbO"/>
+                            <constraint firstItem="Agc-Pe-PAk" firstAttribute="centerX" secondItem="gbm-Ho-80Y" secondAttribute="centerX" id="za0-H1-baR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gbm-Ho-80Y"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7sL-WE-Qmc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1813.5999999999999" y="1639.4302848575715"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5eN-YU-TT6">
@@ -464,20 +510,6 @@ We are working with a company, (the leading health company and makers of health 
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AeY-jo-Gif" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="306" y="8"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="yfc-gI-udm">
-            <objects>
-                <viewController id="NbH-Xr-AOC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nFg-Pw-Uhh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="jOS-ta-i2q"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RqR-4H-uVF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
     </scenes>
 </document>
