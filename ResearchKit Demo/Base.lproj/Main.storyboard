@@ -101,7 +101,7 @@ Use the Smart Device and the Mobile App to improve your health and review feedba
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhf-lJ-oYQ">
-                                <rect key="frame" x="0.0" y="108" width="375" height="464"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="508"/>
                                 <connections>
                                     <segue destination="icn-n1-Rxw" kind="embed" id="Dfi-rc-gcc"/>
                                 </connections>
@@ -119,7 +119,7 @@ Use the Smart Device and the Mobile App to improve your health and review feedba
                             <constraint firstItem="9L8-i5-PrX" firstAttribute="top" secondItem="C0S-10-25q" secondAttribute="bottom" constant="9" id="DmX-Qp-Tcd"/>
                             <constraint firstItem="mhf-lJ-oYQ" firstAttribute="trailing" secondItem="EH9-pf-ytY" secondAttribute="trailing" id="Oxp-Wt-PrD"/>
                             <constraint firstItem="EH9-pf-ytY" firstAttribute="bottom" secondItem="mhf-lJ-oYQ" secondAttribute="bottom" constant="95" id="bBA-bP-7We"/>
-                            <constraint firstItem="mhf-lJ-oYQ" firstAttribute="top" secondItem="EH9-pf-ytY" secondAttribute="top" constant="44" id="pus-wt-JqN"/>
+                            <constraint firstItem="mhf-lJ-oYQ" firstAttribute="top" secondItem="EH9-pf-ytY" secondAttribute="top" id="fdX-qD-Eep"/>
                             <constraint firstItem="C0S-10-25q" firstAttribute="centerX" secondItem="EH9-pf-ytY" secondAttribute="centerX" id="qa2-Sw-v6E"/>
                             <constraint firstItem="9L8-i5-PrX" firstAttribute="centerX" secondItem="EH9-pf-ytY" secondAttribute="centerX" id="wNc-2q-qOM"/>
                         </constraints>
