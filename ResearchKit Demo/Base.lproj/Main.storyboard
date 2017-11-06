@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s4T-fv-WTw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ex2-8T-bh1">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -83,7 +83,7 @@ Use the Smart Device and the Mobile App to improve your health and review feedba
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYk-0X-sJh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1492" y="795.20239880059978"/>
+            <point key="canvasLocation" x="1831.2" y="795.20239880059978"/>
         </scene>
         <!--Intro View Controller-->
         <scene sceneID="vLy-L1-TCT">
@@ -109,7 +109,7 @@ Use the Smart Device and the Mobile App to improve your health and review feedba
                                 </items>
                             </navigationBar>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhf-lJ-oYQ">
-                                <rect key="frame" x="0.0" y="64" width="375" height="508"/>
+                                <rect key="frame" x="0.0" y="108" width="375" height="464"/>
                                 <connections>
                                     <segue destination="icn-n1-Rxw" kind="embed" id="Dfi-rc-gcc"/>
                                 </connections>
@@ -133,6 +133,7 @@ Use the Smart Device and the Mobile App to improve your health and review feedba
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EH9-pf-ytY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="K9h-4H-U7a"/>
                     <connections>
                         <outlet property="containerView" destination="mhf-lJ-oYQ" id="PsW-qC-4HC"/>
                         <outlet property="pageControl" destination="C0S-10-25q" id="uHc-G0-B2F"/>
@@ -140,7 +141,7 @@ Use the Smart Device and the Mobile App to improve your health and review feedba
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="51x-UA-IkU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="728.79999999999995" y="8.5457271364317844"/>
+            <point key="canvasLocation" x="1068" y="8.5457271364317844"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="1um-x6-k0I">
@@ -148,7 +149,7 @@ Use the Smart Device and the Mobile App to improve your health and review feedba
                 <pageViewController storyboardIdentifier="RKIntroPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="icn-n1-Rxw" customClass="PageViewController" customModule="ResearchKit_Demo" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tOf-9D-e5k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2018" y="8"/>
+            <point key="canvasLocation" x="2356" y="7.1964017991004505"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ped-2h-paS">
@@ -213,7 +214,7 @@ We are working with a company, (the leading health company and makers of health 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NqJ-IR-dca" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2224.8000000000002" y="794.30284857571223"/>
+            <point key="canvasLocation" x="2564" y="794.30284857571223"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2nf-wD-RcE">
@@ -275,7 +276,25 @@ We are working with a company, (the leading health company and makers of health 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Lt-kL-hCg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3032.8000000000002" y="794.30284857571223"/>
+            <point key="canvasLocation" x="3372" y="794.30284857571223"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="k0g-N6-vrh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ex2-8T-bh1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i8z-D7-waD">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="s4T-fv-WTw" kind="relationship" relationship="rootViewController" id="bEb-0J-4s8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AeY-jo-Gif" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="306" y="8"/>
         </scene>
     </scenes>
 </document>
