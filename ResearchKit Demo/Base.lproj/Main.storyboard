@@ -112,7 +112,6 @@ Use the Smart Device and the Mobile App to improve your health and review feedba
                                 <rect key="frame" x="151.5" y="607" width="73" height="30"/>
                                 <state key="normal" title="Join Study"/>
                                 <connections>
-                                    <action selector="joinStudy:" destination="s4T-fv-WTw" eventType="touchUpInside" id="XT7-7d-PCw"/>
                                     <segue destination="QWV-jB-ZXB" kind="show" id="VbR-2V-W7m"/>
                                 </connections>
                             </button>
