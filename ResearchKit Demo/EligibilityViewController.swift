@@ -10,9 +10,24 @@ import UIKit
 
 class EligibilityViewController: UIViewController {
 
+    @IBOutlet weak var nextButton: UIBarButtonItem!
+
+    @IBAction func tapNextButton(_ sender: Any) {
+
+    }
+    @IBOutlet weak var yes1: UILabel!
+    @IBOutlet weak var no1: UILabel!
+
+    @IBOutlet weak var yes2: UILabel!
+    @IBOutlet weak var no2: UILabel!
+
+    @IBOutlet weak var yes3: UILabel!
+    @IBOutlet weak var no3: UILabel!
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        nextButton.isEnabled = true
         // Do any additional setup after loading the view.
     }
 
@@ -20,7 +35,6 @@ class EligibilityViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation
