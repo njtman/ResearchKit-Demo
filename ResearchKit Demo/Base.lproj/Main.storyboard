@@ -141,7 +141,9 @@ Use the Smart Device and the Mobile App to improve your health and review feedba
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EH9-pf-ytY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Health Study" id="K9h-4H-U7a"/>
+                    <navigationItem key="navigationItem" title="Health Study" id="K9h-4H-U7a">
+                        <barButtonItem key="backBarButtonItem" title=" " id="X5q-ob-mH2"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="containerView" destination="mhf-lJ-oYQ" id="PsW-qC-4HC"/>
                         <outlet property="pageControl" destination="C0S-10-25q" id="uHc-G0-B2F"/>
