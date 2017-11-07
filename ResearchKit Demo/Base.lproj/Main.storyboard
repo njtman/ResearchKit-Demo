@@ -289,7 +289,7 @@
                 <pageViewController storyboardIdentifier="RKIntroPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="icn-n1-Rxw" customClass="RKIntroPageViewController" customModule="ResearchKit_Demo" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tOf-9D-e5k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1068" y="759"/>
+            <point key="canvasLocation" x="610" y="746"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="k0g-N6-vrh">
@@ -386,7 +386,7 @@ Use the Smart Device and the Mobile App to improve your health and review feedba
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bor-KL-j65" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1068" y="1588"/>
+            <point key="canvasLocation" x="1423" y="967"/>
         </scene>
     </scenes>
 </document>
