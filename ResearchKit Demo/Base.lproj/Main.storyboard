@@ -14,7 +14,7 @@
         <!--Eligibility-->
         <scene sceneID="tXs-O4-3df">
             <objects>
-                <viewController title="Eligibility" id="QWV-jB-ZXB" customClass="EligibilityViewController" customModule="ResearchKit_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Eligibility" id="QWV-jB-ZXB" customClass="RKEligibilityQuestionnaireViewController" customModule="ResearchKit_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="irg-ai-7cg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -189,7 +189,7 @@
         <!--Eligibility Consent View Controller-->
         <scene sceneID="mbo-dR-s8J">
             <objects>
-                <viewController id="5Zr-ye-bgo" customClass="EligibilityConsentViewController" customModule="ResearchKit_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5Zr-ye-bgo" customClass="RKEligibilityConsentViewController" customModule="ResearchKit_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IOb-bt-3vW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -358,10 +358,10 @@ Use the Smart Device and the Mobile App to improve your health and review feedba
             </objects>
             <point key="canvasLocation" x="1068" y="8.5457271364317844"/>
         </scene>
-        <!--Page View Controller-->
+        <!--Intro Page View Controller-->
         <scene sceneID="1um-x6-k0I">
             <objects>
-                <pageViewController storyboardIdentifier="RKIntroPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="icn-n1-Rxw" customClass="PageViewController" customModule="ResearchKit_Demo" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="RKIntroPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="icn-n1-Rxw" customClass="RKIntroPageViewController" customModule="ResearchKit_Demo" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tOf-9D-e5k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2356" y="7.1964017991004505"/>
