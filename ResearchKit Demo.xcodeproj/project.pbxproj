@@ -10,7 +10,6 @@
 		75919EC70409D77282498738 /* Pods_ResearchKit_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E87E361624CFFC46897F311 /* Pods_ResearchKit_Demo.framework */; };
 		806D19DE1FB0057B0043F558 /* EligibilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806D19DD1FB0057B0043F558 /* EligibilityViewController.swift */; };
 		808E8B7F1FAD5A0E000EF6F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808E8B7E1FAD5A0E000EF6F2 /* AppDelegate.swift */; };
-		808E8B811FAD5A0E000EF6F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808E8B801FAD5A0E000EF6F2 /* ViewController.swift */; };
 		808E8B841FAD5A0E000EF6F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808E8B821FAD5A0E000EF6F2 /* Main.storyboard */; };
 		808E8B861FAD5A0E000EF6F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808E8B851FAD5A0E000EF6F2 /* Assets.xcassets */; };
 		808E8B891FAD5A0E000EF6F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808E8B871FAD5A0E000EF6F2 /* LaunchScreen.storyboard */; };
@@ -47,7 +46,6 @@
 		806D19DD1FB0057B0043F558 /* EligibilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EligibilityViewController.swift; sourceTree = "<group>"; };
 		808E8B7B1FAD5A0E000EF6F2 /* ResearchKit Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ResearchKit Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		808E8B7E1FAD5A0E000EF6F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		808E8B801FAD5A0E000EF6F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		808E8B831FAD5A0E000EF6F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		808E8B851FAD5A0E000EF6F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		808E8B881FAD5A0E000EF6F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 			children = (
 				80E65A091FAE7B97002697A9 /* ResearchStudiesConsent.swift */,
 				808E8B7E1FAD5A0E000EF6F2 /* AppDelegate.swift */,
-				808E8B801FAD5A0E000EF6F2 /* ViewController.swift */,
 				808E8B821FAD5A0E000EF6F2 /* Main.storyboard */,
 				806D19DD1FB0057B0043F558 /* EligibilityViewController.swift */,
 				80D073591FB0B58700616123 /* EligibilityConsentViewController.swift */,
@@ -475,7 +472,6 @@
 			files = (
 				80E65A0A1FAE7B97002697A9 /* ResearchStudiesConsent.swift in Sources */,
 				80D9BD211FAE050000BBB27E /* PageViewController.swift in Sources */,
-				808E8B811FAD5A0E000EF6F2 /* ViewController.swift in Sources */,
 				80D0735A1FB0B58700616123 /* EligibilityConsentViewController.swift in Sources */,
 				80D9BD231FAE18ED00BBB27E /* RKIntroViewController.swift in Sources */,
 				806D19DE1FB0057B0043F558 /* EligibilityViewController.swift in Sources */,
