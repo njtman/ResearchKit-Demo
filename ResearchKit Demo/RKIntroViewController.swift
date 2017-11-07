@@ -13,7 +13,7 @@ class RKIntroViewController: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var containerView: UIView!
 
-    var introPageViewController: PageViewController? {
+    var introPageViewController: RKIntroPageViewController? {
         didSet {
             introPageViewController?.pageViewDelegate = self
         }
@@ -26,7 +26,7 @@ class RKIntroViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let introPageViewController = segue.destination as? PageViewController {
+        if let introPageViewController = segue.destination as? RKIntroPageViewController {
             self.introPageViewController = introPageViewController
         }
     }
@@ -39,14 +39,14 @@ class RKIntroViewController: UIViewController {
     }
 }
 
-extension RKIntroViewController: PageViewControllerDelegate {
+extension RKIntroViewController: RKIntroPageViewControllerDelegate {
 
-    func pageViewController(_ pageViewController: PageViewController,
+    func pageViewController(_ pageViewController: RKIntroPageViewController,
                             didUpdatePageCount count: Int) {
         pageControl.numberOfPages = count
     }
 
-    func pageViewController(_ pageViewController: PageViewController,
+    func pageViewController(_ pageViewController: RKIntroPageViewController,
                             didUpdatePageIndex index: Int) {
         pageControl.currentPage = index
     }
