@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EligibilityViewController: UIViewController {
+class RKEligibilityQuestionnaireViewController: UIViewController {
 
     @IBOutlet weak var nextButton: UIBarButtonItem!
 
