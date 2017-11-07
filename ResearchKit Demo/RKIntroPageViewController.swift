@@ -12,15 +12,21 @@ class RKIntroPageViewController: UIPageViewController {
 
     weak var pageViewDelegate: RKIntroPageViewControllerDelegate?
 
+    var arrPageTitle: NSArray = NSArray()
+    var arrPageContent: NSArray = NSArray()
+
     fileprivate(set) lazy var orderedViewControllers: [UIViewController] = {
         // The view controllers will be shown in this order
-        return [self.newStepViewController("1"),
-                self.newStepViewController("2"),
-                self.newStepViewController("3")]
+        return [self.newStepViewController(0),
+                self.newStepViewController(1),
+                self.newStepViewController(2)]
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        arrPageTitle = ["This is screen 1", "This is screen 2", "This is screen 3"];
+        arrPageContent = ["Content on page 1", "Content on page 2", "Content on page 3"];
 
         dataSource = self
         delegate = self
@@ -59,9 +65,14 @@ class RKIntroPageViewController: UIPageViewController {
         }
     }
 
-    fileprivate func newStepViewController(_ step: String) -> UIViewController {
-        return UIStoryboard(name: "Main", bundle: nil) .
-            instantiateViewController(withIdentifier: "RKIntroPageContentController\(step)")
+    fileprivate func newStepViewController(_ index: Int) -> UIViewController {
+        let pageContentViewController = self.storyboard?.instantiateViewController(withIdentifier: "PageControllerContent") as! RKIntroContentViewController
+
+        pageContentViewController.titleString = "\(arrPageTitle[index])"
+        pageContentViewController.contentString = "\(arrPageContent[index])"
+        pageContentViewController.pageIndex = index
+
+        return pageContentViewController
     }
 
     /**
