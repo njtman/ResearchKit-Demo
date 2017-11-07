@@ -8,9 +8,9 @@
 
 import UIKit
 
-class PageViewController: UIPageViewController {
+class RKIntroPageViewController: UIPageViewController {
 
-    weak var pageViewDelegate: PageViewControllerDelegate?
+    weak var pageViewDelegate: RKIntroPageViewControllerDelegate?
 
     fileprivate(set) lazy var orderedViewControllers: [UIViewController] = {
         // The view controllers will be shown in this order
@@ -97,7 +97,7 @@ class PageViewController: UIPageViewController {
 
 // MARK: UIPageViewControllerDataSource
 
-extension PageViewController: UIPageViewControllerDataSource {
+extension RKIntroPageViewController: UIPageViewControllerDataSource {
 
     func pageViewController(_ pageViewController: UIPageViewController,
                             viewControllerBefore viewController: UIViewController) -> UIViewController? {
@@ -144,7 +144,7 @@ extension PageViewController: UIPageViewControllerDataSource {
 
 }
 
-extension PageViewController: UIPageViewControllerDelegate {
+extension RKIntroPageViewController: UIPageViewControllerDelegate {
 
     func pageViewController(_ pageViewController: UIPageViewController,
                             didFinishAnimating finished: Bool,
@@ -155,7 +155,7 @@ extension PageViewController: UIPageViewControllerDelegate {
 
 }
 
-protocol PageViewControllerDelegate: class {
+protocol RKIntroPageViewControllerDelegate: class {
 
     /**
      Called when the number of pages is updated.
@@ -163,7 +163,7 @@ protocol PageViewControllerDelegate: class {
      - parameter pageViewController: the pageViewController instance
      - parameter count: the total number of pages.
      */
-    func pageViewController(_ pageViewController: PageViewController,
+    func pageViewController(_ pageViewController: RKIntroPageViewController,
                                     didUpdatePageCount count: Int)
 
     /**
@@ -172,7 +172,7 @@ protocol PageViewControllerDelegate: class {
      - parameter pageViewController: the TutorialPageViewController instance
      - parameter index: the index of the currently visible page.
      */
-    func pageViewController(_ pageViewController: PageViewController,
+    func pageViewController(_ pageViewController: RKIntroPageViewController,
                                     didUpdatePageIndex index: Int)
 
 }

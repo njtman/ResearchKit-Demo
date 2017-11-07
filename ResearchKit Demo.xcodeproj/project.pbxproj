@@ -16,7 +16,7 @@
 		808E8B941FAD5A0F000EF6F2 /* ResearchKit_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808E8B931FAD5A0F000EF6F2 /* ResearchKit_DemoTests.swift */; };
 		808E8B9F1FAD5A0F000EF6F2 /* ResearchKit_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808E8B9E1FAD5A0F000EF6F2 /* ResearchKit_DemoUITests.swift */; };
 		80D0735A1FB0B58700616123 /* EligibilityConsentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D073591FB0B58700616123 /* EligibilityConsentViewController.swift */; };
-		80D9BD211FAE050000BBB27E /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D9BD201FAE050000BBB27E /* PageViewController.swift */; };
+		80D9BD211FAE050000BBB27E /* RKIntroPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D9BD201FAE050000BBB27E /* RKIntroPageViewController.swift */; };
 		80D9BD231FAE18ED00BBB27E /* RKIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D9BD221FAE18ED00BBB27E /* RKIntroViewController.swift */; };
 		80E65A0A1FAE7B97002697A9 /* ResearchStudiesConsent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E65A091FAE7B97002697A9 /* ResearchStudiesConsent.swift */; };
 		A251127B7C7445416F7D3922 /* Pods_ResearchKit_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59054EBEA289E781ABA26D8 /* Pods_ResearchKit_DemoTests.framework */; };
@@ -57,7 +57,7 @@
 		808E8B9E1FAD5A0F000EF6F2 /* ResearchKit_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchKit_DemoUITests.swift; sourceTree = "<group>"; };
 		808E8BA01FAD5A0F000EF6F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80D073591FB0B58700616123 /* EligibilityConsentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EligibilityConsentViewController.swift; sourceTree = "<group>"; };
-		80D9BD201FAE050000BBB27E /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		80D9BD201FAE050000BBB27E /* RKIntroPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKIntroPageViewController.swift; sourceTree = "<group>"; };
 		80D9BD221FAE18ED00BBB27E /* RKIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKIntroViewController.swift; sourceTree = "<group>"; };
 		80E65A091FAE7B97002697A9 /* ResearchStudiesConsent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchStudiesConsent.swift; sourceTree = "<group>"; };
 		9DA52B96E04A614416850CFF /* Pods-ResearchKit DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResearchKit DemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ResearchKit DemoTests/Pods-ResearchKit DemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 				806D19DD1FB0057B0043F558 /* EligibilityViewController.swift */,
 				80D073591FB0B58700616123 /* EligibilityConsentViewController.swift */,
 				80D9BD221FAE18ED00BBB27E /* RKIntroViewController.swift */,
-				80D9BD201FAE050000BBB27E /* PageViewController.swift */,
+				80D9BD201FAE050000BBB27E /* RKIntroPageViewController.swift */,
 				808E8B851FAD5A0E000EF6F2 /* Assets.xcassets */,
 				808E8B871FAD5A0E000EF6F2 /* LaunchScreen.storyboard */,
 				808E8B8A1FAD5A0E000EF6F2 /* Info.plist */,
@@ -471,8 +471,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				80E65A0A1FAE7B97002697A9 /* ResearchStudiesConsent.swift in Sources */,
-				80D9BD211FAE050000BBB27E /* PageViewController.swift in Sources */,
 				80D0735A1FB0B58700616123 /* EligibilityConsentViewController.swift in Sources */,
+				80D9BD211FAE050000BBB27E /* RKIntroPageViewController.swift in Sources */,
 				80D9BD231FAE18ED00BBB27E /* RKIntroViewController.swift in Sources */,
 				806D19DE1FB0057B0043F558 /* EligibilityViewController.swift in Sources */,
 				808E8B7F1FAD5A0E000EF6F2 /* AppDelegate.swift in Sources */,
