@@ -9,7 +9,7 @@
 import UIKit
 import ResearchKit
 
-class EligibilityConsentViewController: UIViewController {
+class RKEligibilityConsentViewController: UIViewController {
 
     private var consent: ResearchStudiesConsent?
     @IBAction func startConsentButton(_ sender: Any) {
